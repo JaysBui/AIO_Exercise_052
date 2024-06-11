@@ -73,3 +73,7 @@ if __name__ == "__main__":
     print(approx_cos(x=3.14, n=5))
     print(approx_sinh(x=3.14, n=5))
     print(approx_cosh(x=3.14, n=5))
+<< << << < HEAD
+== == == =
+
+>>>>>> > 20b6b2fd7f0e4f1c79d6d5425caf097828dd9101

@@ -53,5 +53,10 @@ def reg_loss_function(nbr_samples, func_name):
 
 
 if __name__ == "__main__":
-    reg_loss_function(nbr_samples=input("Input number: "),
-                      func_name=input("Input loss function: "))
+<< << << < HEAD
+reg_loss_function(nbr_samples=input("Input number: "),
+                  func_name=input("Input loss function: "))
+== == == =
+reg_loss_function(nbr_samples=input("Input number: "),
+                  func_name=input("Input loss function: "))
+>>>>>> > 20b6b2fd7f0e4f1c79d6d5425caf097828dd9101
