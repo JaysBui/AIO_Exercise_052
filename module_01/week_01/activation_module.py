@@ -58,9 +58,5 @@ def activation_function(x, f):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     activation_function(x=input("Input value:"), f=input(
         "Input function (sigmoid|relu|elu):2"))
-=======
-    activation_function(x = input("Input value:"), f = input("Input function (sigmoid|relu|elu):2"))
->>>>>>> 20b6b2fd7f0e4f1c79d6d5425caf097828dd9101
