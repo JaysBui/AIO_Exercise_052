@@ -1,15 +1,18 @@
-#Bài 3:
+# Bài 3:
 import random
 import math
+
 
 def mae_function(lst):
     result = sum(lst) / len(lst)
     return result
 
+
 def mse_function(lst):
     lst = [math.sqrt(x) for x in lst]
     result = sum(lst) / len(lst)
     return result
+
 
 def rmse_function(lst):
     result = math.sqrt(
@@ -17,8 +20,10 @@ def rmse_function(lst):
     )
     return result
 
+
 def reg_loss_function(nbr_samples, func_name):
-    print(f"Input number off samples (integer number) which are generated: {nbr_samples}")
+    print(
+        f"Input number off samples (integer number) which are generated: {nbr_samples}")
     print(f"Input loss name: {func_name}")
     if not str(nbr_samples).isnumeric():
         print("Number of samples must be an Integer")
@@ -27,11 +32,12 @@ def reg_loss_function(nbr_samples, func_name):
         lst = []
         nbr_samples = int(nbr_samples)
         for idx in range(nbr_samples):
-            tg_val = random.uniform(0,10)
-            prd_val = random.uniform(0,10)
+            tg_val = random.uniform(0, 10)
+            prd_val = random.uniform(0, 10)
             loss = abs(prd_val - tg_val)
             lst.append(loss)
-            print(f"Loss name: {func_name}, sample: {idx}, predict: {prd_val}, target: {tg_val}, loss: {loss}")
+            print(
+                f"Loss name: {func_name}, sample: {idx}, predict: {prd_val}, target: {tg_val}, loss: {loss}")
     if func_name == "MAE":
         print(f"Final MAE: {mae_function(lst)}")
         return mae_function(lst)
@@ -44,7 +50,8 @@ def reg_loss_function(nbr_samples, func_name):
     else:
         print("Unknown loss function name")
         return None
-    
-    
+
+
 if __name__ == "__main__":
-    reg_loss_function(nbr_samples= input("Input number: "), func_name= input("Input loss function: "))
+    reg_loss_function(nbr_samples=input("Input number: "),
+                      func_name=input("Input loss function: "))
