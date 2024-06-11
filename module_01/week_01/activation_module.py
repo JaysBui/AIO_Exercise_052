@@ -1,5 +1,7 @@
-#Bài 2
+# Bài 2
 import math
+
+
 def is_number(x):
     try:
         float(x)
@@ -8,23 +10,27 @@ def is_number(x):
         return False
     return True
 
+
 def sigmoid_function(x):
     sigmoid = 1 / (1 + math.exp(-x))
     return sigmoid
+
 
 def relu_function(x):
     if x <= 0:
         relu = 0
     else:
-        relu = x 
+        relu = x
     return relu
 
-def elu_function(x, alpha = 0.01):
+
+def elu_function(x, alpha=0.01):
     if x <= 0:
         elu = alpha*(math.exp(x) - 1)
     else:
         elu = x
     return elu
+
 
 def activation_function(x, f):
     act_func = ["sigmoid", "relu", "elu"]
@@ -50,5 +56,7 @@ def activation_function(x, f):
             print(f"ELU function: f({x}) = {result}")
             return result
 
+
 if __name__ == "__main__":
-    activation_function(x = input("Input value:"), f = input("Input function (sigmoid|relu|elu):2"))
+    activation_function(x=input("Input value:"), f=input(
+        "Input function (sigmoid|relu|elu):2"))
