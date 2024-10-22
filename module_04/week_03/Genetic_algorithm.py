@@ -125,8 +125,8 @@ def visualize_predict_gt(population):
 if __name__ == '__main__':
     #Btap1: 
     features_X, sales_Y = load_data_from_file('AIO-2024/module4-week3-genetic_algorithm/data/advertising.csv')
-    # print (features_X[:5 ,:])
-    # print (sales_Y.shape)
+    print (features_X[:5 ,:])
+    print (sales_Y.shape)
 
     #Btap2:
     # individual = create_individual()
