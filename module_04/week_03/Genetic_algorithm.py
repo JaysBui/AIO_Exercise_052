@@ -102,7 +102,8 @@ def create_new_population(old_population, elitism=2, gen=1):
 def run_GA():
     n_generations = 100
     m = 600
-    # features_X, sales_Y = load_data_from_file('AIO-2024/module4-week3-genetic_algorithm/data/advertising.csv')
+    features_X, sales_Y = load_data_from_file(
+        'module_04/week_03/advertising.csv')
     population = initializePopulation(m)
     losses_list = []
     for i in range(n_generations):
