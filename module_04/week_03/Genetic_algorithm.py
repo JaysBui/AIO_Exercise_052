@@ -141,47 +141,49 @@ def visualize_predict_gt(population):
 
 
 if __name__ == '__main__':
-    # Btap1:
-    features_X, sales_Y = load_data_from_file(
-        'module_04/week_03/advertising.csv')
-    print(features_X[:5, :])
-    print(sales_Y.shape)
+    #Btap1: 
+    features_X, sales_Y = load_data_from_file('AIO-2024/module4-week3-genetic_algorithm/data/advertising.csv')
+    print (features_X[:5 ,:])
+    print (sales_Y.shape)
 
-    # Btap2:
-    individual = create_individual()
-    print(individual)
+    #Btap2:
+    # individual = create_individual()
+    # print( individual )
 
-    # Btap3:
-    individual = [4.09, 4.82, 3.10, 4.02]
-    fitness_score = compute_fitness(individual)
-    print(fitness_score)
+    #Btap3:
+    # individual = [4.09 , 4.82 , 3.10 , 4.02]
+    # fitness_score = compute_fitness( individual )
+    # print( fitness_score )
+    
+    #Btap4:
+    # individual1 = [4.09 , 4.82 , 3.10 , 4.02]
+    # individual2 = [3.44 , 2.57 , -0.79 , -2.41]
+    # individual1 , individual2 = crossover( individual1 , individual2 , 2.0)
+    # print (" individual1 : " , individual1 )
+    # print (" individual2 : " , individual2 )
 
-    # Btap4:
-    individual1 = [4.09, 4.82, 3.10, 4.02]
-    individual2 = [3.44, 2.57, -0.79, -2.41]
-    individual1, individual2 = crossover(individual1, individual2, 2.0)
-    print(" individual1 : ", individual1)
-    print(" individual2 : ", individual2)
+    #Btap5:
+    # before_individual = [4.09 , 4.82 , 3.10 , 4.02]
+    # after_individual = mutate( before_individual , mutation_rate = 2.0)
+    # print ( before_individual == after_individual )
 
-    # Btap5:
-    before_individual = [4.09, 4.82, 3.10, 4.02]
-    after_individual = mutate(before_individual, mutation_rate=2.0)
-    print(before_individual == after_individual)
+    #Btap6:
+    # population = initializePopulation( 3 )
+    # print( population )
 
-    # Btap6:
-    population = initializePopulation(3)
-    print(population)
+    #Btap7: selection function
 
-    # Btap7: selection function
+    #Btap8: 
+    # individual1 = [4.09 , 4.82 , 3.10 , 4.02]
+    # individual2 = [3.44 , 2.57 , -0.79 , -2.41]
+    # individual3 = [2.487 , 1.57 , -1.23 , -3.33]
+    # old_population = [ individual1 , individual2, individual3 ]
+    # new_population , _ = create_new_population( old_population , elitism =  1 , gen =1)
+    # print( new_population )
 
-    # Btap8:
-    individual1 = [4.09, 4.82, 3.10, 4.02]
-    individual2 = [3.44, 2.57, -0.79, -2.41]
-    old_population = [individual1, individual2]
-    new_population, _ = create_new_population(old_population, elitism=1, gen=1)
-    print(new_population)
+    #Btap9 & 10 & 11:
+    # population, losses_list =run_GA()
+    # visualize_loss( losses_list )
+    # visualize_predict_gt(population)
 
-    # Btap9 & 10 & 11:
-    population, losses_list = run_GA()
-    visualize_loss(losses_list)
-    visualize_predict_gt(population)
+
